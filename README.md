@@ -2,12 +2,12 @@
 Simple script to set up a cowrie honey pot. Tested on Debian 9.7 and Ubuntu 18.04 on 1gb ram/1 vCPUs VPS servers.
 
 # How to get it working
-`
+```
 git clone https://github.com/remembercds/Insta-Honey-Pot.git
 cd /Insta-Honey-Pot
 chmod +x
 ./insta-honey-pot.sh
-`
+```
 If your terminal output looks like this by the end of the script:
 
 ```
