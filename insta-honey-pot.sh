@@ -1,7 +1,7 @@
 #!/bin/bash
 apt update
 apt-get install git python-virtualenv libssl-dev libffi-dev build-essential libpython-dev python2.7-minimal authbind python-pip dialog -y
-sudo adduser --disabled-password --gecos cowrie
+sudo adduser --disabled-password --gecos --home cowrie
 runuser -l cowrie -c 'git clone http://github.com/micheloosterhof/cowrie'
 runuser -l cowrie -c 'cd cowrie'
 runuser -l cowrie -c 'virtualenv cowrie-env'
