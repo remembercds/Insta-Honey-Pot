@@ -9,7 +9,8 @@ chmod +x
 ./insta-honey-pot.sh
 `
 If your terminal output looks like this by the end of the script:
-`
+
+```
 Using default Python virtual environment "/home/cowrie/cowrie-env"
 Starting cowrie: [twistd   --umask=0022 --pidfile=var/run/cowrie.pid --logger cowrie.python.logfile.logger cowrie ]...
 Active Internet connections (servers and established)
@@ -23,7 +24,7 @@ tcp        0      0 0.0.0.0:2223            0.0.0.0:*               LISTEN
 ................................................................................................
 Remember you will have to log into your ssh server from the [whatever port you inputed] from now on!
 
-`
+```
 That means it's working!
 
 
