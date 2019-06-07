@@ -22,5 +22,6 @@ runuser -l cowrie -c 'virtualenv cowrie-env'
 runuser -l cowrie -c 'pip install -r ~/cowrie/requirements.txt'
 runuser -l cowrie -c '~/cowrie/bin/cowrie start'
 netstat -tan
+echo "Remember you will have to log into your ssh server from the $ssh port from now on!"
 su cowrie
 
