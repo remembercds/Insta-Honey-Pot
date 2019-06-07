@@ -1,6 +1,7 @@
 # Insta-Honey-Pot
 Simple script to set up a cowrie honey pot. Tested on Debian 9.7 and Ubuntu 18.04 on 1gb ram/1 vCPUs VPS servers.
-
+![meme](https://imgur.com/a/J9HwHKR)
+Almost immediately spooky hackers will start trying to break in oooo!
 # How to get it working
 ```
 git clone https://github.com/remembercds/Insta-Honey-Pot.git
