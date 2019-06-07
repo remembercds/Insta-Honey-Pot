@@ -10,7 +10,7 @@ runuser -l cowrie -c 'pip install -r ~/cowrie/requirements.txt'
 runuser -l cowrie -c 'cp ~/cowrie/etc/cowrie.cfg.dist ~/cowrie/etc/cowrie.cfg'
 hostname=$(dialog --inputbox "Type in a convincing hostname." 10 60 3>&1 1>&2 2>&3 3>&1) || exit
 runuser -l cowrie -c "sed -i '29s/.*/hostname = $hostname/' ~/cowrie/etc/cowrie.cfg"
-ssh=$(dialog --inputbox "Type in an new ssh port for root (port 22 is for the honeypot)" 10 60 3>&1 1>&2 2>&3 3>&1)
+ssh=$(dialog --inputbox "Type in an new ssh port for root (port 22 is for the honeypot) \n You will have to log onto the server from this port from now on. \n **ssh connection may break at this point, just log back in and restart script" 10 60 3>&1 1>&2 2>&3 3>&1)
 let ssh="$ssh$number"
 echo 'Port' $ssh >> /etc/ssh/sshd_config
 service ssh restart
@@ -23,4 +23,4 @@ runuser -l cowrie -c 'pip install -r ~/cowrie/requirements.txt'
 runuser -l cowrie -c '~/cowrie/bin/cowrie start'
 netstat -tan
 su cowrie
-runuser -l cowrie -c 'tail -f ~/cowrie/var/log/cowrie/cowrie.log'
+
